@@ -8,6 +8,7 @@ let obj = {
     exists:false,
 };
 canvas.onclick = function(event){
+    if (obj.exists) return;
     obj.x = event.offsetX - obj.size/2;
     obj.y = event.offsetY - obj.size/2;
     obj.exists = true;
